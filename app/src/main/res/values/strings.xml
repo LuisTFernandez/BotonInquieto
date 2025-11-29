@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BotonInquieto</string>
+    <string name="titulo_inicio_sesion">Inicio de Sesión</string>
+    <string name="titulo_ajustes">Ajustes</string>
+    <string name="comenzar">Comenzar</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="titulo_inicio">Inicio</string>
+    <string name="boton_cerrar_sesion">Cerrar Sesión</string>
+    <string name="nombre_pagina_principal">Página Principal</string>
+    <string name="contenido_imagen_ajustes">Ajustes</string>
+    <string name="etiqueta_formulario_correo">Correo electrónico</string>
+    <string name="etiqueta_formulario_contrasena">Contraseña</string>
+    <string name="slider_invertir_colores">Invertir colores</string>
+    <string name="boton_color_random">¡Hazme click!</string>
+    <string name="descripcion_general_aplicacion">Esta es una aplicación de prueba para el módulo de PMDM \n Su funcionalidad principal consiste en un botón que cambiará de color a uno aleatorio.</string>
+    <string name="titulo_descripcion_general">Descripción general</string>
+    <string name="continuar">Continuar</string>
+    <string name="nuevo_contacto">Nuevo contacto</string>
+    <string name="editar_contactos">Editar contactos</string>
+    <string name="activar_notificaciones">Activar Notificaciones</string>
+    <string name="guardar">Guardar</string>
+    <string name="nombre">Nombre</string>
+    <string name="tlf">Número de teléfono</string>
+    <string name="modificar">Modificar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

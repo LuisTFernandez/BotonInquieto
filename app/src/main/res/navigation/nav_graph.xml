@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentInstrucciones">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.botoninquieto.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/fragmentInstrucciones"
+        android:name="com.example.botoninquieto.FragmentInstrucciones"
+        android:label="fragment_instrucciones"
+        tools:layout="@layout/fragment_instrucciones" >
+        <action
+            android:id="@+id/action_fragmentInstrucciones_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.botoninquieto.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.botoninquieto.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentPrincipal"
+            app:destination="@id/fragmentPrincipal" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPrincipal"
+        android:name="com.example.botoninquieto.FragmentPrincipal"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_fragmentPrincipal_to_fragmentAjustes"
+            app:destination="@id/fragmentAjustes" />
+        <action
+            android:id="@+id/action_fragmentPrincipal_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCrearContacto"
+        android:name="com.example.botoninquieto.FragmentCrearContacto"
+        android:label="fragment_crear_contacto"
+        tools:layout="@layout/fragment_crear_contacto" >
+        <action
+            android:id="@+id/action_fragmentCrearContacto_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAjustes"
+        android:name="com.example.botoninquieto.FragmentAjustes"
+        android:label="fragment_ajustes"
+        tools:layout="@layout/fragment_ajustes" >
+        <action
+            android:id="@+id/action_fragmentAjustes_to_fragmentCrearContacto"
+            app:destination="@id/fragmentCrearContacto" />
+        <action
+            android:id="@+id/action_fragmentAjustes_to_fragmentEditarContactos"
+            app:destination="@id/fragmentEditarContactos" />
+        <action
+            android:id="@+id/action_fragmentAjustes_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEditarContactos"
+        android:name="com.example.botoninquieto.FragmentEditarContactos"
+        android:label="fragment_editar_contactos"
+        tools:layout="@layout/fragment_editar_contactos" >
+        <action
+            android:id="@+id/action_fragmentEditarContactos_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+</navigation>
